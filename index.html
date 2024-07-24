@@ -21,10 +21,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="user-select-none">
-    <header id="home" class="py-3">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white border-bottom fs-5 mx-sm-5"
-      >
+    <header id="home" class="py-3 border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fs-5 mx-sm-5">
         <div class="container">
           <a class="navbar-brand" href="index.html"
             >Port<span class="text-primary">Mahi.</span></a
@@ -309,7 +307,7 @@
           </h3>
           <hr class="m-auto w-25" />
         </div>
-        <div class="row mx-4 py-4">
+        <div class="row mx-4 py-4 align-items-center justify-content-center">
           <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-right">
             <h4>Hi I'am <span class="text-primary">Mukesh Rathod</span></h4>
             <p class="fs-6 fw-bold">
@@ -336,7 +334,11 @@
             class="col-sm-12 col-md-6 col-lg-6 col-12 text-center"
             data-aos="fade-left"
           >
-            <img src="./img/imp_img/about_us.png" class="" alt="" />
+            <img
+              src="./img/imp_img/about_us.png"
+              class="img-fluid w-100"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -515,7 +517,11 @@
         </div>
         <div class="row my-3 py-3 align-items-center justify-content-center">
           <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-right">
-            <img src="./img/imp_img/service.png" alt="" />
+            <img
+              src="./img/imp_img/service.png"
+              alt=""
+              class="img-fluid w-100"
+            />
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-left">
             <div class="row">
@@ -790,43 +796,13 @@
             class="col-sm-12 col-md-6 col-12 text-center"
             data-aos="flip-right"
           >
-            <div class="row g-3">
+            <div class="row g-3 align-items-center justify-content-center">
               <div class="col-md-6">
-                <img src="./img/imp_img/contact_us.jpg" alt="" />
-              </div>
-            </div>
-            <div class="row g-3 icons">
-              <div class="col-md-6 icon">
-                <ul class="d-flex justify-content-center">
-                  <li class="mx-sm-3 " data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Github">
-                    <a href="#"
-                      ><i class="fa-brands fa-github btn btn-white fs-3 social-icon"></i
-                    ></a>
-                  </li>
-                  <li class="mx-sm-3 " data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Instagram">
-                    <a href="#" 
-                      ><i class="fa-brands fa-instagram btn btn-white fs-3 social-icon"></i
-                    ></a>
-                  </li>
-                  <li class="mx-sm-3 " data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Linked-In">
-                    <a href="#"
-                      ><i class="fa-brands fa-linkedin btn btn-white fs-3 social-icon"></i
-                    ></a>
-                  </li>
-                  <li class="mx-sm-3 " data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="Twitter">
-                    <a href="#" 
-                      ><i class="fa-brands fa-twitter btn btn-white fs-3 social-icon"></i
-                    ></a>
-                  </li>
-                </ul>
+                <img
+                  src="./img/imp_img/contact_us.jpg"
+                  class="img-fluid w-100"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -862,7 +838,7 @@
     </section>
 
     <section class="footer border-top" data-aos="zoom-in">
-      <div class="container-fluid py-3">
+      <div class="container py-3">
         <div class="row justify-content-center align-items-center">
           <div class="col-sm-12 col-md-6 text-center">
             <div class="left_part">
@@ -870,18 +846,42 @@
                 &copy; <span class="text-primary">Mahi</span> Rathod 2024.
               </h6>
               <ul class="d-flex justify-content-center">
-                <li data-bs-toggle="tooltip"
+                <li
+                  data-bs-toggle="tooltip"
                   data-bs-placement="top"
-                  title="Home"><a class="mx-4 text-dark navigation" href="#home"><i class="fa-solid fa-arrow-up"></i></a></li>
-                <li data-bs-toggle="tooltip"
+                  title="Home"
+                >
+                  <a class="mx-sm-2 mx-4 text-dark navigation" href="#home"
+                    ><i class="fa-solid fa-arrow-up"></i
+                  ></a>
+                </li>
+                <li
+                  data-bs-toggle="tooltip"
                   data-bs-placement="top"
-                  title="About"><a class="mx-4 text-dark navigation" href="#about"><i class="fa fa-user"></i></a></li>
-                <li data-bs-toggle="tooltip"
+                  title="About"
+                >
+                  <a class="mx-sm-2 mx-4 text-dark navigation" href="#about"
+                    ><i class="fa fa-user"></i
+                  ></a>
+                </li>
+                <li
+                  data-bs-toggle="tooltip"
                   data-bs-placement="top"
-                  title="Service"><a class="mx-4 text-dark navigation" href="#services"><i class="fa-solid fa-gears"></i></a></li>
-                <li data-bs-toggle="tooltip"
+                  title="Service"
+                >
+                  <a class="mx-sm-2 mx-4 text-dark navigation" href="#services"
+                    ><i class="fa-solid fa-gears"></i
+                  ></a>
+                </li>
+                <li
+                  data-bs-toggle="tooltip"
                   data-bs-placement="top"
-                  title="Contact"><a class="mx-4 text-dark navigation" href="#contact"><i class="fa-solid fa-phone"></i></a></li>
+                  title="Contact"
+                >
+                  <a class="mx-sm-2 mx-4 text-dark navigation" href="#contact"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -891,31 +891,39 @@
                 Connects With <span class="text-primary">Us</span>
               </h6>
               <ul class="text-center">
-                <li  data-bs-toggle="tooltip"
+                <li
+                  data-bs-toggle="tooltip"
                   data-bs-placement="top"
-                  title="GitHub">
+                  title="GitHub"
+                >
                   <a href="#" class="mx-3 text-dark footer-social-icon"
                     ><i class="fa-brands fa-github btn btn-white fs-5"></i
                   ></a>
                 </li>
-                <li data-bs-toggle="tooltip"
+                <li
+                  data-bs-toggle="tooltip"
                   data-bs-placement="top"
-                  title="Instagram">
+                  title="Instagram"
+                >
                   <a href="#" class="mx-3 text-dark footer-social-icon"
                     ><i class="fa-brands fa-instagram btn btn-white fs-5"></i
                   ></a>
                 </li>
-                <li  data-bs-toggle="tooltip"
+                <li
+                  data-bs-toggle="tooltip"
                   data-bs-placement="top"
-                  title="Linked-In">
+                  title="Linked-In"
+                >
                   <a href="#" class="mx-3 text-dark footer-social-icon"
                     ><i class="fa-brands fa-linkedin btn btn-white fs-5"></i
                   ></a>
                 </li>
 
-                <li  data-bs-toggle="tooltip"
+                <li
+                  data-bs-toggle="tooltip"
                   data-bs-placement="top"
-                  title="Twitter">
+                  title="Twitter"
+                >
                   <a href="#" class="mx-3 text-dark footer-social-icon"
                     ><i class="fa-brands fa-twitter btn btn-white fs-5"></i
                   ></a>
