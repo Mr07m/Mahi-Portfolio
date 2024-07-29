@@ -24,9 +24,13 @@
     <header id="home" class="py-3 border-bottom">
       <nav class="navbar navbar-expand-lg navbar-light bg-white fs-5 mx-sm-5">
         <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><span class="text-primary">Mahi &hearts;</span></a
-          >
+          <a class="navbar-brand" href="index.html">
+            <span class="text-primary">Mahi 
+              <span class="text-danger">
+                <i class="fa-solid fa-dragon"></i>
+              </span>
+            </span>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,23 +45,32 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home |</a>
+                <a
+                  class="nav-link main-navigation"
+                  aria-current="page"
+                  href="#home"
+                  >Home |</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About |</a>
+                <a class="nav-link main-navigation" href="#about">About |</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills |</a>
+                <a class="nav-link main-navigation" href="#skills">Skills |</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services">Services |</a>
+                <a class="nav-link main-navigation" href="#services"
+                  >Services |</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us |</a>
+                <a class="nav-link main-navigation" href="#contact"
+                  >Contact Us |</a
+                >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link main-navigation"
                   href="#"
                   data-bs-toggle="modal"
                   data-bs-target="#login"
@@ -66,7 +79,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link main-navigation"
                   href="#"
                   data-bs-toggle="modal"
                   data-bs-target="#register"
@@ -77,7 +90,7 @@
           </div>
         </div>
       </nav>
-    </header>
+    </header>  
 
     <div class="container my-3 py-3">
       <div class="my-carosual w-100">
@@ -224,7 +237,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="formGroupExampleInput"
+                id="formGroupExampleInput3"
                 placeholder="Full Name"
               />
             </div>
@@ -232,7 +245,7 @@
               <input
                 type="email"
                 class="form-control"
-                id="formGroupExampleInput2"
+                id="formGroupExampleInput4"
                 placeholder="Email...."
               />
             </div>
@@ -307,7 +320,7 @@
           </h3>
           <hr class="m-auto w-25" />
         </div>
-        <div class="row mx-4 py-4 align-items-center justify-content-center">
+        <div class="row mx-4 py-4 align-items-center justify-content-center about-me">
           <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-right">
             <h4>Hi I'am <span class="text-primary">Mukesh Rathod</span></h4>
             <p class="fs-6 fw-bold">
@@ -355,8 +368,8 @@
           </h3>
           <hr class="m-auto w-25" />
         </div>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-sm-12 col-md-4 col-12 text-center">
+        <div class="row align-items-center justify-content-center my-skills">
+          <div class="col-sm-12 col-md-4 col-12 text-center ">
             <div class="skills_img my-3" data-aos="fade-down">
               <img src="./img/imp_img/skills.jpg" class="img-fluid" alt="" />
             </div>
@@ -515,23 +528,23 @@
           </h3>
           <hr class="m-auto w-25" />
         </div>
-        <div class="row my-3 py-3 align-items-center justify-content-center">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-right">
-            <img
+        <div
+          class="row justify-content-center align-items-center g-5"
+        >
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <div class="service_img">
+              <img
               src="./img/imp_img/service.png"
+              class="img-fluid w-100 d-block"
               alt=""
-              class="img-fluid w-100"
             />
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-left">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-12 m-auto text-center my-4">
-                <h3>My Projects</h3>
-              </div>
             </div>
-
-            <div class="row align-items-center justify-content-center">
-              <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-8 col-12">
+            <div
+              class="row justify-content-center align-items-center g-2"
+            >
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">Calculator</h5>
@@ -542,9 +555,10 @@
                       >See Project</a
                     >
                   </div>
-                </div>
+                </div>             
               </div>
-              <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">Rock Paper Secissor</h5>
@@ -555,12 +569,10 @@
                       >See Project</a
                     >
                   </div>
-                </div>
+                </div>                
               </div>
-            </div>
 
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">Tic-Tac-Toe</h5>
@@ -571,9 +583,10 @@
                       >See Project</a
                     >
                   </div>
-                </div>
+                </div>               
               </div>
-              <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title">Resume Builder</h5>
@@ -584,12 +597,20 @@
                       >See Project</a
                     >
                   </div>
-                </div>
+                </div>               
               </div>
+
+
+
             </div>
+
+            
+            
           </div>
         </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        
+        
+        <div class="gap-2 d-md-flex justify-content-md-end">
           <a href="https://github.com/dashboard" target="_blank">
             <button class="btn text-primary" type="button">
               More Project
@@ -618,10 +639,10 @@
             <div class="card w-80">
               <div class="card-body">
                 <h5 class="card-title">
-                  <img src="./img/testimonials/testi1.png" alt="" /><span
+                  <img src="./img/testimonials/testi1.png" alt="1" /><span
                     class="text-muted mx-5"
                   >
-                    - Krishna</span
+                    - Rathod</span
                   >
                 </h5>
                 <p class="card-text fw-bold">
@@ -647,7 +668,7 @@
                   <img src="../img/testimonials/testi2.png" alt="" /><span
                     class="text-muted mx-5"
                   >
-                    - Meenu</span
+                    - Jha</span
                   >
                 </h5>
                 <p class="card-text fw-bold">
@@ -673,7 +694,7 @@
                   <img src="./img/testimonials/testi3.png" alt="" /><span
                     class="text-muted mx-5"
                   >
-                    - Parvati</span
+                    - Mishra</span
                   >
                 </h5>
                 <p class="card-text fw-bold">
@@ -696,10 +717,10 @@
             <div class="card w-80">
               <div class="card-body">
                 <h5 class="card-title">
-                  <img src="./img/testimonials/testi4.png" alt="" /><span
+                  <img src="./img/testimonials/testi3.png" alt="" /><span
                     class="text-muted mx-5"
                   >
-                    - Jha</span
+                    - Athani</span
                   >
                 </h5>
                 <p class="card-text fw-bold">
@@ -722,10 +743,10 @@
             <div class="card w-80">
               <div class="card-body">
                 <h5 class="card-title">
-                  <img src="./img/testimonials/testi5.png" alt="" /><span
+                  <img src="./img/testimonials/testi1.png" alt="" /><span
                     class="text-muted mx-5"
                   >
-                    - Chavan</span
+                    - Naik</span
                   >
                 </h5>
                 <p class="card-text fw-bold">
@@ -748,10 +769,10 @@
             <div class="card w-80">
               <div class="card-body">
                 <h5 class="card-title">
-                  <img src="../img/testimonials/testi6.png" alt="" /><span
+                  <img src="../img/testimonials/testi2.png" alt="" /><span
                     class="text-muted mx-5"
                   >
-                    - Jadhav</span
+                    - Mehta</span
                   >
                 </h5>
                 <p class="card-text fw-bold">
@@ -799,7 +820,7 @@
             <div class="row g-3 align-items-center justify-content-center">
               <div class="col-md-6">
                 <img
-                  src="./img/imp_img/contact_us.jpg"
+                  src="./img/imp_img/NewContact_us_Image.png"
                   class="img-fluid w-100"
                   alt=""
                 />
@@ -809,21 +830,19 @@
           <div class="col-sm-12 col-md-6 col-12" data-aos="flip-up">
             <form class="row g-3">
               <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" />
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" />
               </div>
               <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Phone No.</label>
-                <input type="number" class="form-control" id="inputPassword4" />
+                <label for="phone" class="form-label">Phone No.</label>
+                <input type="number" class="form-control" id="phone" />
               </div>
               <div class="mb-3">
-                <label for="validationTextarea" class="form-label"
-                  >Feed Back</label
-                >
+                <label for="feedback" class="form-label">Feed Back</label>
                 <textarea
                   class="form-control"
                   rows="5"
-                  id="validationTextarea"
+                  id="feedback"
                   placeholder="Messege..."
                 ></textarea>
               </div>
@@ -897,7 +916,7 @@
                   title="GitHub"
                 >
                   <a href="#" class="mx-3 text-dark footer-social-icon"
-                    ><i class="fa-brands fa-github btn btn-white fs-5"></i
+                    ><i class="fa-brands fa-github"></i
                   ></a>
                 </li>
                 <li
@@ -906,8 +925,7 @@
                   title="Instagram"
                 >
                   <a href="#" class="mx-3 text-dark footer-social-icon"
-                    ><i class="fa-brands fa-instagram btn btn-white fs-5"></i
-                  ></a>
+                    ><i class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li
                   data-bs-toggle="tooltip"
@@ -915,8 +933,7 @@
                   title="Linked-In"
                 >
                   <a href="#" class="mx-3 text-dark footer-social-icon"
-                    ><i class="fa-brands fa-linkedin btn btn-white fs-5"></i
-                  ></a>
+                    ><i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
 
                 <li
@@ -925,8 +942,7 @@
                   title="Twitter"
                 >
                   <a href="#" class="mx-3 text-dark footer-social-icon"
-                    ><i class="fa-brands fa-twitter btn btn-white fs-5"></i
-                  ></a>
+                    ><i class="fa-brands fa-x-twitter"></i></a>
                 </li>
               </ul>
             </div>
