@@ -5,6 +5,9 @@
     text-decoration: none;
     list-style: none;
 }
+html,body{
+    max-width: 100%;
+}
 .main-navigation{
     font-weight: normal;
     transition: all 0.15s linear 0.15s;
