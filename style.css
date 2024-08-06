@@ -7,15 +7,14 @@
 }
 html,body{
     max-width: 100%;
+    overflow-x: hidden;
 }
 .main-navigation{
     font-weight: normal;
     transition: all 0.15s linear 0.15s;
-    text-shadow: none;
     text-decoration: none;
 }
 .main-navigation:hover{
-    text-shadow: none;
     font-weight: bold;
     transition: all 0.15s linear 0.15s;
 }
@@ -97,3 +96,26 @@ html{
     flex-direction: row-reverse;
 }
 
+/* star code start */
+.ratings{
+    color: #ffe400;
+}
+.ratings input{
+    display: none;
+}
+.ratings label{
+    margin: 0px 7px;
+}
+.ratings input + label{
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: 1px 1px 0 #ffe400;
+}
+.ratings input:checked + label ~ label{
+    color: #838383;
+}
+.ratings label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+/* star code ends */
